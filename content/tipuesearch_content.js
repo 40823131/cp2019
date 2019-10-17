@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': '關於', 'text': '40823131 \n', 'tags': '', 'url': '關於.html'}, {'title': '圖片', 'text': '', 'tags': '', 'url': '圖片.html'}]};
+var tipuesearch = {"pages": [{'title': 'about', 'text': '\n void main() {\n   print("hello world!");\n} \n https://mde.tw/dartpad/?id=519d62668524881f5e22d033c70d3aa8 \xa0 \n', 'tags': '', 'url': 'about.html'}, {'title': 'image', 'text': '', 'tags': '', 'url': 'image.html'}]};
