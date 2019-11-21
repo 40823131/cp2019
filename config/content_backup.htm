@@ -125,7 +125,33 @@ files:
 <p style="text-align: left;"><img alt="" height="24" src="/images/EX3-3-1.png" width="250"/><img alt="600" caption="false" height="34" src="/images/EX3-3-2.png" width="600"/></p>
 <p style="text-align: center;"><img caption="false" height="124" src="/images/EX3-3-3.png" width="200"/></p>
 <p style="text-align: left;"><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=25f3dd4d1af915d8e7e42c5d69313985" width="900"></iframe></p>
-<h1>9th week</h1>
+<h2>10th week</h2>
 <p>分組倉儲:<a href="https://github.com/40823131/cp2019ag6">https://github.com/40823131/cp2019ag6</a></p>
+<h2>11th week</h2>
+<h3>temperature</h3>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823131&gh_repo=cp2019ag6&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('rungekutta')">rungekutta</button><button onclick="getDart('helloworld')">helloworld</button><button onclick="getDart('temperature')">temperature</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823131&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
 <h1>image</h1>
 <p><img alt="" height="219" src="/images/main111.jpg" width="543"/></p>
