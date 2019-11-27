@@ -132,10 +132,19 @@ files:
 <!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
 <script>
 function getDart(dirname){
-    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823131&gh_repo=cp2019ag6&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
 
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
 
 function largest(){
 document.getElementById("iframe").width = document.body.clientWidth ;
@@ -149,7 +158,7 @@ document.getElementById("iframe").height = 600 ;
 </script>
 <!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
-<p><button onclick="getDart('rungekutta')">rungekutta</button><button onclick="getDart('helloworld')">helloworld</button><button onclick="getDart('temperature')">temperature</button></p>
+<p><button onclick="getDart('rungekutta')">rungekutta</button><button onclick="getDart('helloworld')">helloworld</button><button onclick="getDart('temperature')">temperature</button><button onclick="getDart('for')">For Loop</button><button onclick="getDart('sum')">Sum</button></p>
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823131&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
