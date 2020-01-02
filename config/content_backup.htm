@@ -241,4 +241,45 @@ document.getElementById("iframe").height = 600 ;
 <p>重量轉換(DART)</p>
 <p><a href="https://dartpad.github.io/?id=d41fc4bd61beb16f8831fe11787cc9b5">https://dartpad.github.io/?id=d41fc4bd61beb16f8831fe11787cc9b5</a> </p>
 <p><span>重量轉換(HTML)</span></p>
-<p><span><a href="https://dartpad.github.io/?id=d41fc4bd61beb16f8831fe11787cc9b5">https://dartpad.github.io/?id=d41fc4bd61beb16f8831fe11787cc9b5</a></span></p>
+<p><a href="https://dartpad.github.io/?id=e2bd9b72716d509cd21c1e348422cc0b">https://dartpad.github.io/?id=e2bd9b72716d509cd21c1e348422cc0b</a></p>
+<p><!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823131&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 --></p>
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('weight')">Weight conversion</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('weight1')">Weight conversion</button></p>
+<p><!-- 內建放入的 Dart 原始碼 --></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823131&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/rungekutta&amp;theme=dark" width="800"></iframe></p>
+<p>重量轉換</p>
+<p>請輸入所要轉換的重量(lb或kg)<br/>以數字加上 lb 或 kg:<br/><br/><input id="weight" style="background-color: #fff;" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
+<script src="/downloads/weight.js"></script>
+<p>各國國旗</p>
+<p><canvas height="200" id="canvas" width="380"></canvas> <button id="button">Clear Canvas</button> <button id="roc">Draw ROC</button> <button id="jp">Draw JP</button> <button id="france">Draw France</button> <button id="russia">Draw Russia</button> <button id="usa">Draw USA</button> <button id="uk">Draw UK</button> <button id="netherlands">Draw Netherlands</button> <button id="germany">Draw Germany</button></p>
+<script src="/downloads/flag.js"></script>
